@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+    function show(a){
+        document.getElementById("c1").style.display="none";
+        document.getElementById("c2").style.display="none";
+        document.getElementById("c3").style.display="none";
+        document.getElementById(a).style.display="block";
+    }
+</script>
+
+</head>
+<body>
+    <table border="1" width="400" align="center">
+        <tr>
+            <td><a href="javascript:show('c1')">BMX<img src="BMX.jpg" width="300"></a></td>
+            <td><a href="javascript:show('c2')">Folding Bike<img src="folding bike.jpg" width="300"></a></td>
+            <td><a href="javascript:show('c3')">Track Bike<img src="Track Bike.jpg" width="300"></a></td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <div id="c1" style="display:None">
+        <h1>BMX - $450</h1>
+    </div>
+
+    <div id="c2" style="display:None">
+        <h1>Folding Bike - $550</h1>
+    </div>
+
+    <div id="c3" style="display:None">
+        <h1>Track Bike - $650</h1>
+    </div>
+</body>
+</html>
